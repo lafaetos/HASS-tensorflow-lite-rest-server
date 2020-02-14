@@ -11,6 +11,7 @@ from typing import List, Tuple
 
 import requests
 from PIL import Image, ImageDraw
+from homeassistant.util.pil import draw_box
 
 import deepstack.core as ds
 import homeassistant.helpers.config_validation as cv
@@ -24,7 +25,6 @@ from homeassistant.components.image_processing import (
     DOMAIN,
     PLATFORM_SCHEMA,
     ImageProcessingEntity,
-    draw_box,
 )
 from homeassistant.const import (
     ATTR_ENTITY_ID,
